@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+   - name: Copy content
+     copy:
+       dest: /tmp/resolv.conf
+       content: "nameserver 10.0.0.47\n"
